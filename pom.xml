@@ -50,5 +50,34 @@
           <artifactId>spring-webmvc</artifactId>
           <version>6.2.11</version>
       </dependency>
+
+      <!-- Spring Data JPA - for database operations -->
+      <dependency>
+          <groupId>org.springframework.data</groupId>
+          <artifactId>spring-data-jpa</artifactId>
+          <version>3.2.0</version>
+      </dependency>
+
+      <!-- Hibernate (JPA implementation) -->
+      <dependency>
+          <groupId>org.hibernate.orm</groupId>
+          <artifactId>hibernate-core</artifactId>
+          <version>6.4.1.Final</version>
+      </dependency>
+
+      <!-- H2 Database (in-memory database for testing) -->
+      <dependency>
+          <groupId>com.h2database</groupId>
+          <artifactId>h2</artifactId>
+          <version>2.2.224</version>
+      </dependency>
+
+      <!-- Jakarta Persistence API -->
+      <dependency>
+          <groupId>jakarta.persistence</groupId>
+          <artifactId>jakarta.persistence-api</artifactId>
+          <version>3.1.0</version>
+      </dependency>
+
   </dependencies>
 </project>
