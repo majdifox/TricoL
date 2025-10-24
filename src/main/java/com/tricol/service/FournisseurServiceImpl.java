@@ -31,4 +31,30 @@ public class FournisseurServiceImpl implements FournisseurService {
     public Fournisseur getFournisseurById(Long id) {
         return repository.findById(id).orElse(null);
     }
+
+    @Override
+    public void deleteFournisseur(Long id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public Fournisseur getByContact(String contact){
+
+        return repository.findByContact(contact);
+
+
+    }
+
+
+
+    @Override
+    public List<Fournisseur> getByDomainName(String domain){
+
+        return repository.findByEmailEndingWith(domain);
+    }
+
+
+
+
+
 }
